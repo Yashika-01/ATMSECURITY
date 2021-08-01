@@ -1,0 +1,184 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:sans-serif;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+nav {
+    font-weight: 600;
+    font-size: 30px;
+    font-family:'Zen Tokyo Zoo', cursive;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+#nav-bar
+{
+    
+    font-family:'Zen Tokyo Zoo', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    color: #fff !important;
+    font-weight: 600;
+    font-family:'Zen Tokyo Zoo', cursive;
+    padding: 0px 10px;
+
+}
+.navbar-brand
+{
+    color: rgb(51, 48, 48) !important;
+    font-weight: 600;
+    font-family:'Zen Tokyo Zoo', cursive;
+    height: 1cm;
+    padding: 10px 10px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: rgb(51, 48, 48) !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+
+}
+.fa-bars
+{
+    color: rgb(51, 48, 48);
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*-------------------------------banner section--------------------------*/
+
+#banner
+{
+    /*background-image: linear-gradient(to right, #f7a7ab,#700404);*/
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title
+{
+    font-family:'Zen Tokyo Zoo', cursive;
+    color:rgb(61, 59, 59);
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-shadow: 4px 4px 4px rgb(4, 128, 70);
+}
+
+.bottom-img
+{
+    width: 100%;
+    height: 300px;
+}
+iframe{
+    box-shadow: 15px 15px 15px rgb(12, 83, 95); 
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    color: rgb(15, 19, 17);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow:10px 10px 10px rgb(54, 54, 54);  ;
+    
+}
+.button:hover {
+    background-color: #055f44;
+    color: white;
+  }
+
+.hlink{
+    color:rgb(0, 0, 0);
+    
+}
+
+.hlink:hover{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+
+}
+
+
+
+/*-----------------------------About Section--------------------------------*/
+
+#about
+{
+    padding: 80px 0;
+}
+about-img
+{
+    width: 100px;
+    margin-top: 20px;
+    float: left;
+}
+.about
+{
+    padding: 20px;
+}
+.about h4
+{
+    padding:5x;
+    margin-top: 25px;
+    text-transform: uppercase; 
+}
+.title::before
+{
+    content: '';
+    background: #701322;
+    height:5px;
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    transform: translateY(63px)
+
+}
+
+.title::after
+{
+    content: '';
+    background: #701322;
+    height:10px;
+    width: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    transform: translateY(10px)
+
+}
+
+/*--------------------------footer section---------------------------*/
+
+#footer
+{
+    /*background-image: linear-gradient(to right,#700404, #f7a7ab);*/
+    color: #fff;
+}
+.footer-box
+{
+    padding: 20px;
+}
+

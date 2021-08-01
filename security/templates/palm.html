@@ -1,0 +1,122 @@
+{% load static %}
+
+<html>
+<head>
+<title>ATM Security</title>
+<link rel="stylesheet" href="{% static 'gesturestyle.css' %}">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      
+        <a class="navbar-brand" href="#" style="font-size: 30px;  color: white;">STEP 3: PALM VEIN VERIFICATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" >ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer" >CONTACTS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+</section>
+
+
+<!----------------------------------banner section---------------------------------->
+<section id="banner">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" >
+            <p class="promo-title" >Please place your palm over the box</p>
+            <input type="hidden" name="task" id="task" value =1>
+
+            <button type="button" class="button" name="button"><a href="palm" class="hlink">Next</a></button>
+			<form method="post" id="task-form">
+				{% csrf_token %}
+				<input type="hidden" name="task" id="task" value =1>
+				<button type="submit" class="button" name="button">ENTER</button>
+			</form>
+		  
+			<script src="https://code.jquery.com/jquery-3.5.1.js" 
+				  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+					crossorigin="anonymous"></script>
+		  
+			<script type="text/javascript">
+			$(document).on('submit','#task-form',function(e){
+				e.preventDefault();
+				$.ajax({
+					type:'POST',
+					url:'{% url "enter2" %}',
+					data:
+					{
+						task:$("#task").val(),
+						csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+					},
+					success:function(){
+						  alert('Saved');
+							}
+					})
+				});
+			</script>
+            <!--<p>Whenever you suspect that a person is lost please register on our website and upload the information ,
+                      so that we can bring smile on the face of the family members by reuniting their loved ones</p>-->
+            <br>
+            <img src="{% static 'images/palm.png' %}" class="gestures">
+                    
+        </div>
+        <div class="col-md-6">
+            <p class="webcam">Picam feed</p>
+          <!--<iframe src="atm.gif" width="480" height="480" frameBorder="0" class="giphy-embed" scrolling="no" overflow="hidden" ></iframe>-->
+          <!--<img src="C:/Users/nehab/Desktop/project/images/family.png" class="img-fluid">-->
+            <img src="{% url 'picam_feed' %}" width="650" height="450">
+            <!--src=""-->
+        </div>
+    </div>
+</div>
+<img src="{% static 'images/WAVE.png' %}" class="bottom-img">
+<!-----------------------------------Services Section-------------------------->
+
+<!---------------------------foooter section--------------------------->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" footer-box>
+        <p>Contact emai id</p>
+        <p>yashika.kuckian@gmail.com</p>
+        <p>masiheasther@gmail.com</p>
+        <p>Tel no: 1234567890</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------------------------Smooth scroll----------------------->
+<script src="smooth-sscroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</body>
+</html>

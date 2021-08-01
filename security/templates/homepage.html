@@ -1,0 +1,86 @@
+<!-- 
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+
+.text-center {
+  text-align: center;
+}
+</style>
+<h1> Welcome to ATM </h1>
+<body>
+    <p> Click the button below to proceed </p>
+    <div class="text-center">
+    <button type="Submit" class="btn btn-primary btn-lg"> <a href=cardno> Proceed</a></button>
+    </div>
+<body>
+<html>
+ -->
+ {%load static %}
+ <html>
+  <head>
+  <title>ATM Security</title>
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  
+  <section id="nav-bar">
+  
+      <nav class="navbar navbar-expand-lg navbar-light">
+        
+        <a class="navbar-brand" href="#"><img src="{% static 'images/atm.png' %}" height="35" width="35" class="d-inline-block align-top">
+          WELCOME TO ATM</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" >ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#footer" >CONTACTS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+  
+  
+  
+  
+  
+  </section>
+  
+  
+  <!----------------------------------banner section---------------------------------->
+  <section id="banner">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <p class="promo-title">ATM SECURITY SYSTEM</p>
+              <button type="button" class="button" name="button"><a href="cardno" class="hlink">Proceed</a></button>
+              <!--<p>Whenever you suspect that a person is lost please register on our website and upload the information ,
+                        so that we can bring smile on the face of the family members by reuniting their loved ones</p>-->
+                      
+          </div>
+          <div class="col-md-6">
+            <iframe src="{% static 'images/atm.gif' %}" width="480" height="480" frameBorder="0" class="giphy-embed" scrolling="no" overflow="hidden" ></iframe>
+            <!--<img src="C:/Users/nehab/Desktop/project/images/family.png" class="img-fluid">-->
+          </div>
+      </div>
+  </div>
+  <img src="{% static 'images/WAVE.png'%}" class="bottom-img">
+  </section>
+  
+  

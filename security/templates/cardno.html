@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Regarding Existing User</title>
+</head>
+<body>
+    <form method="post" id="cdno-form">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter CARD NO" name="cdno" id="cdno" required>
+        <button type="submit">CHECK</button>
+    </form>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+    $(document).on('submit','#cdno-form',function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            url:'{% url "cardno" %}',
+            data:
+            {  
+                cdno:$("#cdno").val(),
+                csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+            },
+        });
+    </script>
+  
+</body>
+</html>
+ -->
+ {% load static %}
+ <html>
+    <head>
+    <title>ATM Security</title>
+    <link rel="stylesheet" href="{% static 'cardstyle.css'%}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+    <section id="nav-bar">
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#" style="font-size: 30px;  color: white;">STEP 1: ACCOUNT NUMBER VERIFICATION</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" >ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer" >CONTACTS</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+    
+    
+    
+    
+    
+    </section>
+    
+    
+    <!----------------------------------banner section---------------------------------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="{% static 'images/acc.png'%}" width="810" height="480" frameBorder="0" class="giphy-embed" scrolling="no" overflow="hidden"></iframe>
+                            
+                </div>
+                <div class="col-md-6">
+                    <form method="post" id="cdno-form">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Enter CARD NO" name="cdno" id="cdno" required>
+                        <button type="submit" class="button button1">CHECK</button>
+                    </form>
+                  
+                    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                            crossorigin="anonymous"></script>
+                  
+                    <script type="text/javascript">
+                    $(document).on('submit','#cdno-form',function(e){
+                        $.ajax({
+                            type:'POST',
+                            url:'{% url "cardno" %}',
+                            data:
+                            {  
+                                cdno:$("#cdno").val(),
+                                csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                            },
+                        });
+                    </script>
+                   
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'images/WAVE.png' %}" class="bottom-img">
+        </section>
+    
+    
+   
