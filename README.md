@@ -78,7 +78,7 @@ This project provides a robust and cost-effective solution to ATM security. By i
 ## Figures
 
 ### Figure 1: Demo User Interface for Gesture-Based PIN Entry
-![Demo User Interface](https://drive.google.com/file/d/14nZ12De1p_cAfMZ1_iRCHZjCuknBrHuU/view?usp=sharing)
+![Demo User Interface](https://drive.google.com/uc?id=14nZ12De1p_cAfMZ1_iRCHZjCuknBrHuU)
 
 ### Figure 2: Chamber for Gesture Recognition
 ![Gesture Chamber](https://drive.google.com/file/d/1318PCiAmSEBK3cbzYivMQCERtP50n_a3/view?usp=sharing)
