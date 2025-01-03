@@ -81,19 +81,19 @@ This project provides a robust and cost-effective solution to ATM security. By i
 ![Demo User Interface](https://drive.google.com/uc?id=14nZ12De1p_cAfMZ1_iRCHZjCuknBrHuU)
 
 ### Figure 2: Chamber for Gesture Recognition
-![Gesture Chamber](https://drive.google.com/file/d/1318PCiAmSEBK3cbzYivMQCERtP50n_a3/view?usp=sharing)
+![Gesture Chamber](https://drive.google.com/uc?id=1318PCiAmSEBK3cbzYivMQCERtP50n_a3)
 
 ### Figure 3: Raspberry Pi Setup for Hand Vein Recognition
-![Raspberry Pi Setup]([https://drive.google.com/file/d/your_file_id/view?usp=sharing](https://drive.google.com/file/d/1p91zDO02wrdV-B9d064FWvIZ2wCxgmxA/view?usp=sharing))
+![Raspberry Pi Setup](https://drive.google.com/uc?id=1p91zDO02wrdV-B9d064FWvIZ2wCxgmxA)
 
 ### Figure 4: Image Processing Techniques for Vein Recognition
-![Image Processing Techniques](https://drive.google.com/file/d/1tz6hkwKDm3SNDaDXXwO71BSy-HpKSd3r/view?usp=sharing)
+![Image Processing Techniques](https://drive.google.com/uc?id=1tz6hkwKDm3SNDaDXXwO71BSy-HpKSd3r)
 
 ### Figure 5: Gesture Recognition Results
-![Gesture Recognition Results](https://drive.google.com/file/d/18FVX3V9g_HYjFMuQOpjaANa-v23_eJs6/view?usp=sharing)
+![Gesture Recognition Results](https://drive.google.com/uc?id=18FVX3V9g_HYjFMuQOpjaANa-v23_eJs6)
 
 ### Figure 6: Hand Vein Recognition Results
-![Hand Vein Recognition Results](https://drive.google.com/file/d/1tb42tWd2wb8QBxAV_cZvFVkp36Mu2Myj/view?usp=sharing)
+![Hand Vein Recognition Results](https://drive.google.com/uc?id=1tb42tWd2wb8QBxAV_cZvFVkp36Mu2Myj)
 
 ---
 
